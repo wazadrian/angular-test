@@ -11,13 +11,13 @@
   <div class="col">
     <p class="sm">use this to add new bucket list goal</p>
     <form>
-      <input type="text" class="txt" name="item"   placeholder="Life goal...">
-      <input type="submit" class="btn" [value]="btnText">
+      <input type="text" class="txt" name="item"   placeholder="Life goal..." [(ngModel)]="goalText">
+      <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
     </form>
   </div>
   <div class="col">
-    <p class="life-container">
-      i want to climb mountain
+    <p class="life-container" *ngFor="let goal of goals">
+      {{ goals }}
     </p>
   </div>
 </div>
