@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  itemCount = 4;
+  itemCount = 0;
   btnText = 'Add an item';
-  goalText = 'My first life goal';
+  goalText = '';
   goals = [];
 
   constructor() { }
